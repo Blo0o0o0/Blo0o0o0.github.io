@@ -95,18 +95,12 @@
                 <div class="col">
                     <div class="card p-3 rounded-5">
                         <div class="card-body">
-                            <h5 class="card-title">We Suck At Deliveries</h5>
+                            <h5 class="card-title">Ray Casting Project</h5>
                             <p class="card-text">
-                            <p>I made this game as part of the Ludum Dare 53 Game Jam with another person as a group
-                                project. The theme for this game jam was "Delivery" and we decided to make a game about
-                                a delivery company receiving and shipping packages.</p>
-                            <p>The game was coded in c# in Unity and the version control was handled through GitHub.</p>
-                            <p>The gameplay controls took inspiration from the level select screen in the Overcooked
-                                video game series. The core gameplay loop involves sucking up parcels from shops to
-                                drive to and shoot at target homes.</p>
-                            <p>Parts of the game that I contributed to are the camera physics and control code, the code
-                                of the UI elements and menu, parts of the level design and 3D modelling and most of the
-                                sprite art and UI art.</p>
+                            <p>I did this project to explore the algoithms of ray casting, as I have an interest in the math and technology of computer graphics</p>
+                            <p>This was coded in python with the pygame module</p>
+                            <p>After researching and reviewing articles and pages on ray casting, i decided to try to code an implementation in python. I did this by building a grid of tiles that signify if there is a wall there or not, and given the players position and its forward facing direction cast rays from different angles relative to the player, each ray reording the distance to the closest wall from that angle. With this information i can then construct a view with each ray contributing a slice of the screen, with shorter slices representing walls that are far away and vice versa. It was quite challenging to work out the code as opposed to traditional vector directions, pygame's y vector is reversed.</p>
+                            <p>A lot of the development of the code was actually pen and paper working out of the algorithm, the rendering was also quite tedious as I orignally set the relationship between distance and slice size to be linear, which caused a "fish-eye" like effect, eventually I used the square cube law to figure out that the slice size is proportional to the square of the distance </p>
                             </p>
                         </div>
                         <ul class="list-group list-group-flush">

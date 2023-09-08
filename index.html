@@ -63,29 +63,42 @@
             </div>
             <h3 class="text-center display-5">Projects</h3>
             <div
-                class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1 g-5 mb-5 px-5 pb-5 justify-content-evenly">
+                class="row row-cols-lg-2 row-cols-md-2 row-cols-sm-1 row-cols-1 g-5 mb-5 pb-5 justify-content-evenly">
                 <div class="col">
                     <div class="card p-3 rounded-5">
+                        <video src="WSAD.mp4" class="card-img-top" controls></video>
                         <div class="card-body">
                             <h5 class="card-title">We Suck At Deliveries</h5>
                             <p class="card-text">
                             <p>I made this game as part of the Ludum Dare 53 Game Jam with another person as a group
                                 project. The theme for this game jam was "Delivery" and we decided to make a game about
                                 a delivery company receiving and shipping packages.</p>
-                            <p>The game was coded in c# in Unity and the version control was handled through GitHub.</p>
-                            <p>The gameplay controls took inspiration from the level select screen in the Overcooked
-                                video game series. The core gameplay loop involves sucking up parcels from shops to
-                                drive to and shoot at target homes. This was achieved by having a shop manager which
-                                allocated parcels to homes and spawns them, and through a collector class which handled
-                                recieving the package, additionally there was an inventory system which recorded which
-                                parcels you had in the van. There was also a game over system inspired by the video game
-                                Mini Metro where if there were too many unsent parcels it would activate a timer and
-                                after a set time if there were still too many unsent parcels it would trigger a game
-                                over</p>
-                            <p>Parts of the game that I contributed to are the camera physics and control code, the code
-                                of the UI elements and menu, parts of the level design and 3D modelling and most of the
-                                sprite art and UI art.</p>
-                            </p>
+                            <div class="collapse" id="collapseExample1">
+                                <p>The game was coded in c# in Unity and the version control was handled through GitHub.
+                                </p>
+                                <p>The gameplay controls took inspiration from the level select screen in the Overcooked
+                                    video game series. The core gameplay loop involves sucking up parcels from shops to
+                                    drive to and shoot at target homes. This was achieved by having a shop manager which
+                                    allocated parcels to homes and spawns them, and through a collector class which
+                                    handled
+                                    recieving the package, additionally there was an inventory system which recorded
+                                    which
+                                    parcels you had in the van. There was also a game over system inspired by the video
+                                    game
+                                    Mini Metro where if there were too many unsent parcels it would activate a timer and
+                                    after a set time if there were still too many unsent parcels it would trigger a game
+                                    over</p>
+                                <p>Parts of the game that I contributed to are the camera physics and control code, the
+                                    code
+                                    of the UI elements and menu, parts of the level design and 3D modelling and most of
+                                    the
+                                    sprite art and UI art.</p>
+                                </p>
+                            </div>
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Read More
+                            </a>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">You can find the Ludum Dare submission <a
@@ -100,27 +113,42 @@
 
                 <div class="col">
                     <div class="card p-3 rounded-5">
+                        <video src="RayCasting.mov" class="card-img-top" controls></video>
                         <div class="card-body">
                             <h5 class="card-title">Ray Casting Project</h5>
                             <p class="card-text">
                             <p>I did this project to explore the algoithms of ray casting, as I have an interest in the
                                 math and technology of computer graphics</p>
-                            <p>This was coded in python with the pygame module</p>
-                            <p>After researching and reviewing articles and pages on ray casting, i decided to try to
-                                code an implementation in python. I did this by building a grid of tiles that signify if
-                                there is a wall there or not, and given the players position and its forward facing
-                                direction cast rays from different angles relative to the player, each ray reording the
-                                distance to the closest wall from that angle. With this information i can then construct
-                                a view with each ray contributing a slice of the screen, with shorter slices
-                                representing walls that are far away and vice versa. It was quite challenging to work
-                                out the code as opposed to traditional vector directions, pygame's y vector is reversed.
-                            </p>
-                            <p>A lot of the development of the code was actually pen and paper working out of the
-                                algorithm, the rendering was also quite tedious as I orignally set the relationship
-                                between distance and slice size to be linear, which caused a "fish-eye" like effect,
-                                eventually I used the square cube law to figure out that the slice size is proportional
-                                to the square of the distance
-                            </p>
+
+                            <div class="collapse" id="collapseExample2">
+                                <p>This was coded in python with the pygame module</p>
+                                <p>After researching and reviewing articles and pages on ray casting, i decided to try
+                                    to
+                                    code an implementation in python. I did this by building a grid of tiles that
+                                    signify if
+                                    there is a wall there or not, and given the players position and its forward facing
+                                    direction cast rays from different angles relative to the player, each ray reording
+                                    the
+                                    distance to the closest wall from that angle. With this information i can then
+                                    construct
+                                    a view with each ray contributing a slice of the screen, with shorter slices
+                                    representing walls that are far away and vice versa. It was quite challenging to
+                                    work
+                                    out the code as opposed to traditional vector directions, pygame's y vector is
+                                    reversed.
+                                </p>
+                                <p>A lot of the development of the code was actually pen and paper working out of the
+                                    algorithm, the rendering was also quite tedious as I orignally set the relationship
+                                    between distance and slice size to be linear, which caused a "fish-eye" like effect,
+                                    eventually I used the square cube law to figure out that the slice size is
+                                    proportional
+                                    to the square of the distance
+                                </p>
+                            </div>
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Read More
+                            </a>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">You can find the source code <a
@@ -131,26 +159,43 @@
 
                 <div class="col">
                     <div class="card p-3 rounded-5">
+                        <video src="DCGPT.mov" class="card-img-top" controls></video>
                         <div class="card-body">
                             <h5 class="card-title">Diet Cola Chat Bot</h5>
                             <p class="card-text">
                             <p>When Chat-GPT first rose to popularity, I was quite intruiged by its technologies, thus I
                                 did this project to explore the possibilities of its functions</p>
-                            <p>This was coded in python and HTML with the flask framework with OpenAi's API</p>
-                            <p>I first read through OpenAI's documentation to understand the API, then i used a flask
-                                skeleton to build my application, I used flask forms to handle the input to the backend
-                                and used the API to generate a response to the users messages. I also stored a history
-                                of the conversation and fed this history back into the AI to give it the context of the
-                                conversation so it could refer back to previous messages.
-                            </p>
-                            <p>I used flask's flash functionality to enable quick loading of the response after user
-                                input, and used bootstrap's elements to provide a responsive layout to the page.
-                            </p>
-                            <p>I decided to make the AI act as a can of diet coke as it is my favourite drink and I
-                                wanted to test the limits of the API. Overall this was quite a fun project to do and I
-                                learnt alot about Language models.
-                            </p>
+
+                            <div class="collapse" id="collapseExample3">
+                                <p>This was coded in python and HTML with the flask framework with OpenAi's API</p>
+                                <p>I first read through OpenAI's documentation to understand the API, then i used a
+                                    flask
+                                    skeleton to build my application, I used flask forms to handle the input to the
+                                    backend
+                                    and used the API to generate a response to the users messages. I also stored a
+                                    history
+                                    of the conversation and fed this history back into the AI to give it the context of
+                                    the
+                                    conversation so it could refer back to previous messages.
+                                </p>
+                                <p>I used flask's flash functionality to enable quick loading of the response after user
+                                    input, and used bootstrap's elements to provide a responsive layout to the page.
+                                </p>
+                                <p>I decided to make the AI act as a can of diet coke as it is my favourite drink and I
+                                    wanted to test the limits of the API. Overall this was quite a fun project to do and
+                                    I
+                                    learnt alot about Language models.
+                                </p>
+                            </div>
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Read More
+                            </a>
                         </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">You can find the source code <a
+                                    href="https://github.com/Blo0o0o0/Diet-Cola-GPT">here</a></li>
+                        </ul>
                     </div>
                 </div>
 
@@ -160,28 +205,38 @@
                             <h5 class="card-title">Sport Centre Booking System</h5>
                             <p>This project was part of my university coursework and was completed as a group project
                                 with 5 other people</p>
-                            <p>This was coded in python and HTML with the flask framework with SQL databases</p>
-                            <p>The objective of this project was to create a booking system for a fictional sports
-                                centre, functionalities include displaying opening times, the ability to check and make
-                                bookings, take online card payments, and managing user and staff accounts.
-                            </p>
-                            <p>This project was organised by having 4 sprints, I undertook the role of Scrum Master for
-                                some of these sprints and supported and organised my team in meeting and programming
-                                sessions, I also partook in pair programming for some of the tasks.
 
-                            </p>
-                            <p>This objectives were achieved by first making a skeleton of all the pages needed and
-                                making the
-                                databases required for the booking system and user accounts, then we implemented
-                                multiple flask forms to facilitate manager powers such as changing availability for the
-                                bookings, then using the databases and flask forms to create our booking system and
-                                payment system.
-                            </p>
-                            <p>There was also an emphasis on accessability, and through this project I learnt a lot
-                                about how different disabilties interact and use technology, and how small changes can
-                                mean big differences in accessability. Such as using colours, patterns and alt text.
+                            <div class="collapse" id="collapseExample4">
+                                <p>This was coded in python and HTML with the flask framework with SQL databases</p>
+                                <p>The objective of this project was to create a booking system for a fictional sports
+                                    centre, functionalities include displaying opening times, the ability to check and
+                                    make
+                                    bookings, take online card payments, and managing user and staff accounts.
+                                </p>
+                                <p>This project was organised by having 4 sprints, I undertook the role of Scrum Master
+                                    for
+                                    some of these sprints and supported and organised my team in meeting and programming
+                                    sessions, I also partook in pair programming for some of the tasks.
 
-                            </p>
+                                </p>
+                                <p>This objectives were achieved by first making a skeleton of all the pages needed and
+                                    making the
+                                    databases required for the booking system and user accounts, then we implemented
+                                    multiple flask forms to facilitate manager powers such as changing availability for
+                                    the
+                                    bookings, then using the databases and flask forms to create our booking system and
+                                    payment system.
+                                </p>
+                                <p>There was also an emphasis on accessability, and through this project I learnt a lot
+                                    about how different disabilties interact and use technology, and how small changes
+                                    can
+                                    mean big differences in accessability. Such as using colours, patterns and alt text.
+                                </p>
+                            </div>
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample4" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Read More
+                            </a>
                         </div>
                     </div>
                 </div>

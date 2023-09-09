@@ -113,7 +113,7 @@
                     <div class="card p-3 rounded-0">
                         <video src="RayCasting.mp4" class="card-img-top" controls></video>
                         <div class="card-body">
-                            <h5 class="card-title">Ray Casting Project</h5>
+                            <h5 class="card-title">Ray Casting Project (First Person Snake)</h5>
                             <p class="card-text">
                             <p>I did this project to explore the algoithms of ray casting, as I have an interest in the
                                 math and technology of computer graphics</p>
@@ -135,6 +135,16 @@
                                     simply moved the slices down inversely proportional to the jumping height to create
                                     the illusion of jumping.
                                 </p>
+                                <p>As an afterthought, I added the game snake to the project, this was achieved by
+                                    adding a 'trail' to the player with varying length, and a 'fruit' to be collected by
+                                    walking into it, the fruit is functionally the same as a wall but once the player
+                                    touches it, it dissapears and another fruit is spawned at a random point in the map.
+                                    Each fruit increments the trail length by one, of which is a history of the players
+                                    movement, which is filled with walls to simulate the snake body</p>
+                                <p>As a consequence to this, there is now a lose condition, if the player is walled in
+                                    by its own body and/or the wall, then the screen will flash a message to say that
+                                    the player has lost, and to press the x key to exit the game (the x key could always
+                                    be pressed to leave the game but it not explicitly mentioned until now)</p>
                                 <p>A lot of the development of the code was actually pen and paper working out of the
                                     algorithm, the rendering was also quite tedious as I orignally set the relationship
                                     between distance and slice size to be linear, which caused a "fish-eye" like effect,

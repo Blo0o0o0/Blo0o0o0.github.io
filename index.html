@@ -68,22 +68,24 @@
                     <div class="card p-3 rounded-0">
                         <div id="carouselExample" class="carousel slide">
                             <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img src="./Anaglyph.png" class="d-block w-100" alt="anaglyph image">
-                              </div>
-                              <div class="carousel-item">
-                                <img src="./Anaglyph2.png" class="d-block w-100" alt="anaglyph image">
-                              </div>
+                                <div class="carousel-item active">
+                                    <img src="./Anaglyph.png" class="d-block w-100" alt="anaglyph image">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./Anaglyph2.png" class="d-block w-100" alt="anaglyph image">
+                                </div>
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Previous</span>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
                             </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="visually-hidden">Next</span>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
                             </button>
-                          </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">Alleviating Anaglyph 3D ghosting</h5>
                             <p class="card-text">
@@ -96,7 +98,7 @@
                             <p>I demonstrated this by building a 3D renderer in C++ with the OpenGL framework. The
                                 abstract of the full report can be read by clicking read more:</p>
                             <p></p>
-                            <div class="collapse" id="collapseExample1">
+                            <div class="collapse" id="collapseExampleAnaglyph">
                                 <p>Abstract: </p>
                                 <p>
                                     Anaglyph (Red-Cyan) 3D is a method of showing a stereoscopic 3D effect through a
@@ -121,14 +123,51 @@
                                     hardware.
                                 </p>
                             </div>
-                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample1" role="button"
-                                aria-expanded="false" aria-controls="collapseExample">
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExampleAnaglyph"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
                                 Read More
                             </a>
                         </div>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">The full report can be read <a href="LEE24-FINAL.pdf"
                                     target="_blank">here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card p-3 rounded-0">
+                        <video src="FADSS.mp4" class="card-img-top" controls></video>
+                        <div class="card-body">
+                            <h5 class="card-title">Farming and Demon Summoning Simulator 2024</h5>
+                            <p class="card-text">
+                            <p>I returned to also do Ludum Dare 54 Game Jam with another person as a group
+                                project. The theme for this game jam was "Summoning" and we decided to make a gardening
+                                game akin to cozy games such as Stardew Valley and Animal Crossing.</p>
+                            <div class="collapse" id="collapseExampleWSAD">
+                                <p>The game was coded in C# in Unity and the version control was handled through GitHub.
+                                </p>
+                                <p>The gameplay controls were inspired by cozy gardening games such as Stardew Valley,
+                                    but for this game we added a puzzle element where the goal was to summon creatures
+                                    by planting flowers in specific patterns on the soil. These patterns were found in a
+                                    spellbook and would be partially filled in, the rest of the pattern would have to be
+                                    deducted through rules such as a daffofil could not be planted next to other plants.
+                                    This gave the puzzle a sudoku like feel.</p>
+                                <p>Parts of the game that I contributed to are the tiling system code, animation code,
+                                    Menu and UI control code, some of the level design, and most of the art.
+                                </p>
+                            </div>
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExampleWSAD"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Read More
+                            </a>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">You can find the Ludum Dare submission and play the game <a
+                                    href="https://ldjam.com/events/ludum-dare/55/farming-demon-summoning-simulator-2024">here</a>
+                            </li>
+                            <li class="list-group-item">You can find the source code <a
+                                    href="https://github.com/thomas-chernaik/SummoningLudumDare">here</a></li>
                         </ul>
                     </div>
                 </div>
@@ -142,7 +181,7 @@
                             <p>I made this game as part of the Ludum Dare 53 Game Jam with another person as a group
                                 project. The theme for this game jam was "Delivery" and we decided to make a game about
                                 a delivery company receiving and shipping packages.</p>
-                            <div class="collapse" id="collapseExample2">
+                            <div class="collapse" id="collapseExampleWSAD">
                                 <p>The game was coded in C# in Unity and the version control was handled through GitHub.
                                 </p>
                                 <p>The gameplay controls took inspiration from the level select screen in the Overcooked
@@ -159,8 +198,8 @@
                                     most of the sprite art and UI art.
                                 </p>
                             </div>
-                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample2" role="button"
-                                aria-expanded="false" aria-controls="collapseExample">
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExampleWSAD"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
                                 Read More
                             </a>
                         </div>
@@ -184,7 +223,7 @@
                             <p>I did this project to explore the algoithms of ray casting, as I have an interest in the
                                 math and technology of computer graphics</p>
 
-                            <div class="collapse" id="collapseExample3">
+                            <div class="collapse" id="collapseExampleFPS">
                                 <p>This was coded in python with the pygame module</p>
                                 <p>After researching and reviewing articles and pages on ray casting, i decided to try
                                     to
@@ -218,8 +257,8 @@
                                     proportional to the square of the distance.
                                 </p>
                             </div>
-                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample3" role="button"
-                                aria-expanded="false" aria-controls="collapseExample">
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExampleFPS"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
                                 Read More
                             </a>
                         </div>
@@ -239,7 +278,7 @@
                             <p>When Chat-GPT first rose to popularity, I was quite intruiged by its technologies, thus I
                                 did this project to explore the possibilities of its functions</p>
 
-                            <div class="collapse" id="collapseExample4">
+                            <div class="collapse" id="collapseExampleDCCB">
                                 <p>This was coded in python and HTML with the flask framework with OpenAi's API</p>
                                 <p>I first read through OpenAI's documentation to understand the API, then i used a
                                     flask skeleton to build my application, I used flask forms to handle the input to
@@ -255,8 +294,8 @@
                                     I learnt alot about Language models.
                                 </p>
                             </div>
-                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample4" role="button"
-                                aria-expanded="false" aria-controls="collapseExample">
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExampleDCCB"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
                                 Read More
                             </a>
                         </div>
@@ -274,7 +313,7 @@
                             <p>This project was part of my university coursework and was completed as a group project
                                 with 5 other people</p>
 
-                            <div class="collapse" id="collapseExample5">
+                            <div class="collapse" id="collapseExampleSporta">
                                 <p>This was coded in python and HTML with the flask framework with SQL databases</p>
                                 <p>The objective of this project was to create a booking system for a fictional sports
                                     centre, functionalities include displaying opening times, the ability to check and
@@ -296,8 +335,8 @@
                                     text.
                                 </p>
                             </div>
-                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample5" role="button"
-                                aria-expanded="false" aria-controls="collapseExample">
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExampleSporta"
+                                role="button" aria-expanded="false" aria-controls="collapseExample">
                                 Read More
                             </a>
                         </div>

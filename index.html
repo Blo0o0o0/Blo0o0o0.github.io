@@ -29,7 +29,10 @@
                     <div class="card p-3 rounded-0">
                         <div class="card-body">
                             <p class="card-text">
-                                Fourth Year student studying Computer Science with High Performance Graphics and Games Engineering, predicted to graduate with First Class Honours BSc, MEng in 2025. Experienced in collaboration and project management through academic group projects and being part a university society committee member.
+                                Fourth Year student studying Computer Science with High Performance Graphics and Games
+                                Engineering, predicted to graduate with First Class Honours BSc, MEng in 2025.
+                                Experienced in collaboration and project management through academic group projects and
+                                being part a university society committee member.
                             </p>
                             <p class="card-text">
                                 Aspiring to be a part of the Games Industry
@@ -51,9 +54,9 @@
                             <li class="list-group-item">LinkedIn: <a
                                     href="https://www.linkedin.com/in/zachariah-lee-709a83229/">linkedin.com/in/zachariah-lee-709a83229</a>
                             </li>
-                            <li class="list-group-item">CV: <a
-                                href="ZachariahLeeCV.pdf" target="_blank">Download PDF here</a>
-                        </li>
+                            <li class="list-group-item">CV: <a href="ZachariahLeeCV.pdf" target="_blank">Download PDF
+                                    here</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -63,6 +66,57 @@
                 class="row row-cols-md-2 row-cols-sm-1 row-cols-1 row-gap-5 mx-1 mx-lg-5 pb-1 pb-lg-5 justify-content-evenly">
                 <div class="col">
                     <div class="card p-3 rounded-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Alleviating Anaglyph 3D ghosting</h5>
+                            <p class="card-text">
+                            <p>This was my undergraduate final year project which achieved a first class grade, it
+                                tackled the issue of ghosting
+                                (crosstalk) in Anaglyph (red-cyan) 3D.</p>
+                            <p>As opposed to the many techniques currently that tackle ghosting with colour correction.
+                                My project tackled the issue without degrading colour quality by changing the focus
+                                plane in real time to what is being looked at.</p>
+                            <p>I demonstrated this by building a 3D renderer in C++ with the OpenGL framework. The
+                                abstract of the full report can be read by clicking read more:</p>
+                            <p></p>
+                            <div class="collapse" id="collapseExample1">
+                                <p>Abstract: </p>
+                                <p>
+                                    Anaglyph (Red-Cyan) 3D is a method of showing a stereoscopic 3D effect through a
+                                    combination of colour encoded media and colour filter glasses. Issues include
+                                    ghosting, where light for one eye is incompletely filtered and perceived by the
+                                    other eye. This causes poor image quality and a reduced ability to perceive depth
+                                    information. Current fixes for Anaglyph 3D involve optimising colours of the image
+                                    to align with the display and glasses used. This reduces ghosting but the colour
+                                    quality of the image is negatively impacted and requires specialised hardware such
+                                    as a colorimeter. This project aimed to alleviate ghosting while preserving colour
+                                    quality and depth perception by utilising the fact that ghosting is proportional to
+                                    the parallax of the object, which is the distance between the object as perceived in
+                                    each eye. A renderer was built that readjusts the focus plane in real time to where
+                                    the user is focusing, which minimised parallax in the focused area. 9 participants
+                                    were asked to use colour correction via gamma adjustment to alleviate ghosting with
+                                    and without focus plane adjustment. Results showed focus plane adjustment required
+                                    71.5% less gamma adjustment, and in some test cases most participants required no
+                                    adjustment. Although newer forms of presenting 3D such as polarised lenses are now
+                                    widespread, Anaglyph 3D does not require specialised displays, is cost-efficient,
+                                    and is the only way of presenting 3D effects on printed media. This fix is a highly
+                                    accessible way of reducing ghosting as it does not require additional specialised
+                                    hardware.
+                                </p>
+                            </div>
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Read More
+                            </a>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">The full report can be read <a href="LEE24-FINAL.pdf"
+                                    target="_blank">here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card p-3 rounded-0">
                         <video src="WSAD.mp4" class="card-img-top" controls></video>
                         <div class="card-body">
                             <h5 class="card-title">We Suck At Deliveries</h5>
@@ -70,7 +124,7 @@
                             <p>I made this game as part of the Ludum Dare 53 Game Jam with another person as a group
                                 project. The theme for this game jam was "Delivery" and we decided to make a game about
                                 a delivery company receiving and shipping packages.</p>
-                            <div class="collapse" id="collapseExample1">
+                            <div class="collapse" id="collapseExample2">
                                 <p>The game was coded in C# in Unity and the version control was handled through GitHub.
                                 </p>
                                 <p>The gameplay controls took inspiration from the level select screen in the Overcooked
@@ -87,7 +141,7 @@
                                     most of the sprite art and UI art.
                                 </p>
                             </div>
-                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample2" role="button"
                                 aria-expanded="false" aria-controls="collapseExample">
                                 Read More
                             </a>
@@ -112,7 +166,7 @@
                             <p>I did this project to explore the algoithms of ray casting, as I have an interest in the
                                 math and technology of computer graphics</p>
 
-                            <div class="collapse" id="collapseExample2">
+                            <div class="collapse" id="collapseExample3">
                                 <p>This was coded in python with the pygame module</p>
                                 <p>After researching and reviewing articles and pages on ray casting, i decided to try
                                     to
@@ -146,7 +200,7 @@
                                     proportional to the square of the distance.
                                 </p>
                             </div>
-                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample2" role="button"
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample3" role="button"
                                 aria-expanded="false" aria-controls="collapseExample">
                                 Read More
                             </a>
@@ -167,7 +221,7 @@
                             <p>When Chat-GPT first rose to popularity, I was quite intruiged by its technologies, thus I
                                 did this project to explore the possibilities of its functions</p>
 
-                            <div class="collapse" id="collapseExample3">
+                            <div class="collapse" id="collapseExample4">
                                 <p>This was coded in python and HTML with the flask framework with OpenAi's API</p>
                                 <p>I first read through OpenAI's documentation to understand the API, then i used a
                                     flask skeleton to build my application, I used flask forms to handle the input to
@@ -183,7 +237,7 @@
                                     I learnt alot about Language models.
                                 </p>
                             </div>
-                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample3" role="button"
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample4" role="button"
                                 aria-expanded="false" aria-controls="collapseExample">
                                 Read More
                             </a>
@@ -202,7 +256,7 @@
                             <p>This project was part of my university coursework and was completed as a group project
                                 with 5 other people</p>
 
-                            <div class="collapse" id="collapseExample4">
+                            <div class="collapse" id="collapseExample5">
                                 <p>This was coded in python and HTML with the flask framework with SQL databases</p>
                                 <p>The objective of this project was to create a booking system for a fictional sports
                                     centre, functionalities include displaying opening times, the ability to check and
@@ -224,7 +278,7 @@
                                     text.
                                 </p>
                             </div>
-                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample4" role="button"
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExample5" role="button"
                                 aria-expanded="false" aria-controls="collapseExample">
                                 Read More
                             </a>

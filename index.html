@@ -67,11 +67,15 @@
                         <div class="card-body">
                             <h5 class="card-title">Vulkan (+ MoltenVk) Renderer</h5>
                             <p class="card-text">
-                            <p>I created a renderer using the Vulkan API as part of a coursework at University.</p>
+                            <p>I created a renderer with C++ using the Vulkan API as part of a coursework at University.
+                            </p>
                             <p>This was originally made on Linux machines, but as my personal computer is MacOS I
                                 decided to take it upon myself to learn MoltenVk and run it on my own device.</p>
                             <div class="collapse" id="collapseExampleMolten">
-                                <p>The renderer has multiple Debug visualisations such as mipmap levels, depth, partial
+                                <p>The renderer uses a physically based shading model with a Lambrtian diffuse component
+                                    and a specular component based on a microfacet BRDF using the Beckmann normal distribution
+                                    function. It uses normal maps and has multiple Debug visualisations such as mipmap
+                                    levels, depth, partial
                                     derivatives, overdraw/overshading and vertex density.</p>
                             </div>
                             <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExampleMolten"
@@ -92,7 +96,8 @@
                             <h5 class="card-title">Raytracing Renderer</h5>
                             <p class="card-text">
                             <p>I created a Raytracer as part of a coursework at univeristy</p>
-                            <p>The renderer has a side by side comparison with the equivalent scene which uses OpenGL to
+                            <p>The renderer was coded in C++ has a side by side comparison with the equivalent scene
+                                which uses OpenGL to
                                 render the scene rasterised. The raytracer can run as a recursive raytracer and as a
                                 path tracer running over a number of samples.</p>
                             <div class="collapse" id="collapseExampleRT">

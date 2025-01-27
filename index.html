@@ -73,7 +73,8 @@
                                 decided to take it upon myself to learn MoltenVk and run it on my own device.</p>
                             <div class="collapse" id="collapseExampleMolten">
                                 <p>The renderer uses a physically based shading model with a Lambrtian diffuse component
-                                    and a specular component based on a microfacet BRDF using the Beckmann normal distribution
+                                    and a specular component based on a microfacet BRDF using the Beckmann normal
+                                    distribution
                                     function. It uses normal maps and has multiple Debug visualisations such as mipmap
                                     levels, depth, partial
                                     derivatives, overdraw/overshading and vertex density.</p>
@@ -184,6 +185,35 @@
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item">The full report can be read <a href="LEE24-FINAL.pdf"
                                     target="_blank">here</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card p-3 rounded-0">
+                        <video src="Dodecahedra.mov" class="card-img-top" controls></video>
+                        <div class="card-body">
+                            <h5 class="card-title">Raytracing Renderer</h5>
+                            <p class="card-text">
+                            <p>I created a renderer which contains components which handles animation and one that
+                                handles collision physics as part of a coursework at univeristy</p>
+                            <p>The renderer was coded in C++. The first part of the coursework involved reading in
+                                multiple .bvh files to draw and animate the skeletal frame, and to blend between
+                                different animations.</p>
+                            <div class="collapse" id="collapseExampleDodecahedra">
+                                <p>The second part involved creating a simple physics engine, I coded collision
+                                    detection between the spheres, the spheres and the terrain, and the spheres and the
+                                    skeleton. This involved keeping track of the state of each object, and i used
+                                    impulses for collision response. I used euler intergration to update each object.
+                                </p>
+                            </div>
+                            <a class="btn btn-warning" data-bs-toggle="collapse" href="#collapseExampleDodecahedra"
+                                role="button" aria-expanded="false" aria-controls="collapseDodecahedra">
+                                Read More
+                            </a>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Source code available on request</li>
                         </ul>
                     </div>
                 </div>
